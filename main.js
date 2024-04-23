@@ -109,8 +109,7 @@ const accionIgual = () => {
   posicion = 0;
   let arrayNumeros = cadena.split(/[+-/X]/);
   let indiceNumeros = 1;
-  let proximaOperacion,
-    operacion,
+  let operacion,
     acum = parseInt(arrayNumeros[0]),
     signoDetected = 0;
   while (posicion < cadena.length) {

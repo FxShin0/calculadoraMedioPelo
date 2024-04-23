@@ -128,4 +128,7 @@ h1 {
   .titulos {
     margin: 0px 20px;
   }
+  #value {
+    font-size: 35px;
+  }
 }
