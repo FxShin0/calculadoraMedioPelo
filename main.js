@@ -68,6 +68,16 @@ const accionIgual = () => {
     alert("Inserta algun valor y una operacion...");
     return 0;
   }
+  if (
+    cadena[0] == "+" ||
+    cadena[0] == "-" ||
+    cadena[0] == "X" ||
+    cadena[0] == "/"
+  ) {
+    alert("No puedes iniciar el calculo con un simbolo de operacion...");
+    accionBorrar();
+    return 0;
+  }
   let operacionDuplicada = 0,
     posicion = 0;
   while (posicion < cadena.length && operacionDuplicada < 2) {
