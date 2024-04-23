@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Rubik;
+}
+h1,
+h2 {
+  color: white;
+  text-align: center;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.border {
+  border: solid 2px black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#calculadora-container {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+.display {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 30%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+#value {
+  font-size: 50px;
+}
+.teclas-container {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+.numeros-container {
+  width: 80%;
+  height: 100%;
+  /* background: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.border-bottom {
+  border-bottom: solid 2px black;
+}
+.numero {
+  width: 30%;
+  height: 20%;
+  /* background: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.acciones-container {
+  width: 20%;
+  height: 100%;
+  /* background: purple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+.accion {
+  width: 97%;
+  height: 15%;
+  /* background: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.hoverstyle:hover {
+  filter: drop-shadow(0px 0px 3px #000000);
+  -webkit-filter: drop-shadow(0px 0px 3px #000000);
+  background: black;
+  color: white;
+  cursor: pointer;
+}

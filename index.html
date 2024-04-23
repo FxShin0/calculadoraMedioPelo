@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="main">
+      <h1>Calculadora Medio-Pelo</h1>
+      <h2>
+        Nota: la calculadora no tiene configurado jerarquia de operaciones, las
+        mismas se resuelven de izquierda a derecha tal cual fueron ingresados,
+        es decir, que 3+2x2 daria 10 y no 7 como deberia...
+      </h2>
+      <section id="calculadora-container">
+        <div class="display border-bottom">
+          <p id="value"></p>
+        </div>
+        <div class="teclas-container">
+          <div class="numeros-container">
+            <div class="numero border hoverstyle" id="uno"><p>1</p></div>
+            <div class="numero border hoverstyle" id="dos"><p>2</p></div>
+            <div class="numero border hoverstyle" id="tres"><p>3</p></div>
+            <div class="numero border hoverstyle" id="cuatro"><p>4</p></div>
+            <div class="numero border hoverstyle" id="cinco"><p>5</p></div>
+            <div class="numero border hoverstyle" id="seis"><p>6</p></div>
+            <div class="numero border hoverstyle" id="siete"><p>7</p></div>
+            <div class="numero border hoverstyle" id="ocho"><p>8</p></div>
+            <div class="numero border hoverstyle" id="nueve"><p>9</p></div>
+            <div class="numero border hoverstyle" id="cero"><p>0</p></div>
+          </div>
+          <div class="acciones-container">
+            <div class="accion border hoverstyle" id="borrar"><p>C</p></div>
+            <div class="accion border hoverstyle" id="dividir"><p>/</p></div>
+            <div class="accion border hoverstyle" id="multiplicar">
+              <p>X</p>
+            </div>
+            <div class="accion border hoverstyle" id="restar"><p>-</p></div>
+            <div class="accion border hoverstyle" id="sumar"><p>+</p></div>
+            <div class="accion border hoverstyle" id="igual"><p>=</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
