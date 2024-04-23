@@ -114,7 +114,7 @@ h1 {
   color: white;
   cursor: pointer;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #calculadora-container {
     width: 250px;
     height: 450px;
