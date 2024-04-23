@@ -12,6 +12,9 @@ h2 {
   color: white;
   text-align: center;
 }
+h1 {
+  font-size: 40px;
+}
 #main {
   width: 100%;
   height: 100vh;
@@ -110,4 +113,19 @@ h2 {
   background: black;
   color: white;
   cursor: pointer;
+}
+@media (max-width: 400px) {
+  #calculadora-container {
+    width: 250px;
+    height: 450px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .titulos {
+    margin: 0px 20px;
+  }
 }
