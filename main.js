@@ -154,9 +154,69 @@ const accionIgual = () => {
       posicion++;
     }
   }
-  displayValue.innerHTML = acum;
+  if (
+    acum.toString().includes(".") &&
+    acum.toString().split(".")[1].length > 6
+  ) {
+    displayValue.innerHTML = acum.toFixed(5);
+  } else {
+    displayValue.innerHTML = acum;
+  }
 };
-
+const keyHandle = (event) => {
+  switch (event.key) {
+    case "+":
+      accionSumar();
+      break;
+    case "-":
+      accionRestar();
+      break;
+    case "*":
+      accionMultiplicar();
+      break;
+    case "/":
+      accionDividir();
+      break;
+    case "Enter":
+      accionIgual();
+      break;
+    case "1":
+      accionUno();
+      break;
+    case "2":
+      accionDos();
+      break;
+    case "3":
+      accionTres();
+      break;
+    case "4":
+      accionCuatro();
+      break;
+    case "5":
+      accionCinco();
+      break;
+    case "6":
+      accionSeis();
+      break;
+    case "7":
+      accionSiete();
+      break;
+    case "8":
+      accionOcho();
+      break;
+    case "9":
+      accionNueve();
+      break;
+    case "0":
+      accionCero();
+      break;
+    case "Backspace":
+      accionBorrar();
+      break;
+    default:
+      break;
+  }
+};
 //agregar escuchador de eventos
 let resuDisplay = "";
 let numeroResu;
@@ -176,3 +236,5 @@ restar.addEventListener("click", accionRestar);
 multiplicar.addEventListener("click", accionMultiplicar);
 dividir.addEventListener("click", accionDividir);
 igual.addEventListener("click", accionIgual);
+//esto no lo enseñaron pero podes detectar teclas especificas, ahi arriba esta hecho con un switch la funcion keyHandle, sirve para que puedas manejar la calculadora con el teclado tambien
+document.addEventListener("keydown", keyHandle);
